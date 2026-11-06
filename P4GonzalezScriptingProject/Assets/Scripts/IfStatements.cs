@@ -6,6 +6,8 @@ using UnityEngine;
 public class IfStatements : MonoBehaviour
 {
     //Creating the variables for my script
+    int cupsInTheSink = 4;
+    //Creating the variables for my script
 
     float coffeeTemperature = 85.0f;
     float hotLimitTemperature = 70.0f;
@@ -14,7 +16,12 @@ public class IfStatements : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //my while loop is going to check if there are cups in the sink and if there are, it will wash them
+        while (cupsInTheSink > 0)
+        {
+            Debug.Log("I've washed a cup!");
+            cupsInTheSink--;
+        }
     }
 
     // Update is called once per frame
